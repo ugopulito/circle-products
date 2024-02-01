@@ -1,0 +1,55 @@
+@import './variables';
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+    display: flex;
+}
+
+body{
+    margin: 0;
+    *{
+        box-sizing: border-box;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-size: $big-text;
+    font-weight: 700;
+    margin: 0;
+    color: $primary-color;
+}
+h2, h3{
+    font-size: $medium-text;
+    font-weight: 700;
+    color: $primary-color;
+    margin: 0 0 20px;
+}
+p{
+    font-size: $standard-text;
+    color: #707070;
+}
+
+.mobile-only{
+    display: none;
+}
+
+
+@media (max-width : 860px){
+    .mobile-hidden{
+        display: none;
+    }
+    .mobile-only{
+        display: block;
+    }
+}

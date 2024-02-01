@@ -1,0 +1,23 @@
+@import './variables';
+.error{
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    p{
+        margin: 50px 0 30px;
+        color: $white;
+    }
+    a{
+        background-color: $white;
+        color: $primary-color;
+        padding: 10px;
+        border-radius: 5px;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
